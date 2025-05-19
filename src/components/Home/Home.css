@@ -1,0 +1,13 @@
+body {
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    background-color: #f7f9fc;
+    margin: 0;
+    padding: 0;
+    color: #4a4a4a;
+    line-height: 1.6;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  

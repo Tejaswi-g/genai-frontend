@@ -1,0 +1,112 @@
+.ligand-container {
+    max-width: 700px;
+    margin: 30px auto;
+    background: linear-gradient(145deg, #ffffff, #f2f2f2);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .ligand-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+  
+  .ligand-description {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 16px;
+    text-align: center;
+    font-size: 13px;
+  }
+  
+  .ligand-label {
+    font-weight: 500;
+    margin-bottom: 4px;
+    display: block;
+    color: #333;
+    font-size: 14px;
+  }
+  
+  .ligand-input,
+  .ligand-textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 13px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .ligand-input:focus,
+  .ligand-textarea:focus {
+    border-color: #2980b9;
+    box-shadow: 0 0 3px rgba(41, 128, 185, 0.4);
+  }
+  
+  .ligand-textarea {
+    max-height: 80px;
+    overflow: auto;
+  }
+  
+  .ligand-button {
+    display: inline-block;
+    background-color: #2980b9;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .ligand-button:hover {
+    background-color: #3498db;
+    transform: translateY(-1px);
+  }
+  
+  .ligand-error {
+    color: #e74c3c;
+    margin-top: 10px;
+    font-weight: 500;
+    text-align: center;
+    font-size: 13px;
+  }
+  
+  .viewer-container {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.05);
+  }
+  
+  .ligand-subtitle {
+    font-size: 16px;
+    font-weight: 600;
+    color: #34495e;
+    margin-bottom: 6px;
+    text-align: center;
+  }
+  
+  .viewer-container div {
+    width: 100%;
+    height: 100px; /* reduced from 600px */
+  }
+  
+  .placeholder-text {
+    color: #888;
+    text-align: center;
+    font-style: italic;
+    margin-top: 14px;
+    font-size: 13px;
+  }
+  

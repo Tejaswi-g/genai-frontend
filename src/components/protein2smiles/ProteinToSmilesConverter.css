@@ -1,0 +1,341 @@
+/* Global container */
+.protein-converter {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    padding: 20px;
+    background: #f7f8fa;
+    min-height: 100vh;
+  }
+  
+  /* Dark mode support */
+  .protein-converter.dark-mode {
+    background: #121212;
+    color: #f0f0f0;
+  }
+  
+  /* Header */
+  .converter-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .converter-header h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .converter-header p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Layout */
+  .converter-layout {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  /* Input Section */
+  .input-section, .output-section {
+    flex: 1 1 45%;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .dark-mode .input-section, 
+  .dark-mode .output-section {
+    background: #1e1e1e;
+  }
+  
+  /* Input Card */
+  .input-card {
+    margin-bottom: 20px;
+  }
+  
+  .input-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .input-header h3 {
+    margin: 0;
+    font-size: 1.3rem;
+  }
+  
+  .input-tips {
+    font-size: 0.9rem;
+    color: #999;
+  }
+  
+  /* Form */
+  .converter-form {
+    margin-top: 15px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  /* Sequence toolbar */
+  .sequence-toolbar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .toolbar-button {
+    background: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+  }
+  
+  .toolbar-button:hover {
+    background: #43a047;
+  }
+  
+  /* Textarea */
+  .sequence-input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    resize: vertical;
+    font-size: 1rem;
+    background: #fff;
+  }
+  
+  .dark-mode .sequence-input {
+    background: #2a2a2a;
+    color: white;
+    border: 1px solid #444;
+  }
+  
+  /* Input footer */
+  .input-footer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    color: #777;
+  }
+  
+  /* Action Buttons */
+  .action-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .convert-button, .secondary-button {
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .convert-button {
+    background: #007bff;
+    color: white;
+  }
+  
+  .convert-button:hover {
+    background: #0069d9;
+  }
+  
+  .secondary-button {
+    background: #f44336;
+    color: white;
+  }
+  
+  .secondary-button:hover {
+    background: #e53935;
+  }
+  
+  /* Error Message */
+  .error-message {
+    margin-top: 15px;
+    padding: 10px;
+    background: #ffe0e0;
+    color: #b00020;
+    border-radius: 6px;
+  }
+  
+  /* Info Card */
+  .info-card, .info-panel {
+    margin-top: 20px;
+    background: #eef2f7;
+    border-radius: 8px;
+    padding: 15px;
+  }
+  
+  .dark-mode .info-card, .dark-mode .info-panel {
+    background: #2b2b2b;
+  }
+  
+  .info-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .feature-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.95rem;
+  }
+  
+  /* Result */
+  .result-container {
+    margin-top: 10px;
+  }
+  
+  .result-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .result-actions {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .action-button {
+    background: #2196f3;
+    color: white;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .action-button:hover {
+    background: #1976d2;
+  }
+  
+  /* SMILES result */
+  .smiles-result {
+    background: #fafafa;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 10px;
+    word-break: break-word;
+  }
+  
+  .dark-mode .smiles-result {
+    background: #333;
+  }
+  
+  /* Visualization */
+  .visualization-section {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .visualize-button {
+    background: #673ab7;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .visualize-button:hover {
+    background: #5e35b1;
+  }
+  
+  /* Molecule Viewer */
+  .molecule-viewer {
+    margin-top: 20px;
+  }
+  
+  .molecule-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  /* Viewer controls */
+  .viewer-controls {
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: #777;
+  }
+  
+  /* Footer */
+  .converter-footer {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .footer-content p {
+    font-size: 0.9rem;
+    color: #aaa;
+  }
+  
+  .footer-links {
+    margin-top: 10px;
+  }
+  
+  .footer-link {
+    margin: 0 10px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s;
+  }
+  
+  .footer-link:hover {
+    color: #0056b3;
+  }
+  
+  /* Spinner */
+  .loading-spinner {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  .spinner {
+    width: 16px;
+    height: 16px;
+    border: 3px solid #ccc;
+    border-top: 3px solid #007bff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  /* Keyframes for spinner */
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  

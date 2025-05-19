@@ -1,0 +1,107 @@
+/* General container styling */
+.image-uploader-container {
+    border: 2px dashed #5a6e8f; /* Muted blue */
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #f4f7fa; /* Light grayish blue */
+    transition: border-color 0.3s, background-color 0.3s;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.image-uploader-container.drag-active {
+    border-color: #a3d9a5; /* Light soft green */
+    background-color: #e9f8e2; /* Very light green */
+}
+
+.image-uploader-container.drag-reject {
+    border-color: #f5b2b2; /* Light red */
+    background-color: #fce2e2; /* Very light pinkish-red */
+}
+
+/* File dropzone content */
+.image-uploader-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.image-uploader-content .icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    color: #5a6e8f; /* Muted blue */
+}
+
+.image-uploader-content .upload-icon {
+    color: #a3d9a5; /* Light soft green */
+}
+
+.image-uploader-content .reject-icon {
+    color: #f5b2b2; /* Light red */
+}
+
+.image-uploader-content .image-icon {
+    color: #6fa1d3; /* Lighter steel blue */
+}
+
+.drag-message {
+    font-size: 16px;
+    color: #5a6e8f; /* Muted blue */
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.browse-message {
+    font-size: 14px;
+    color: #6c757d; /* Grayish text */
+}
+
+.browse-link {
+    color: #5a6e8f; /* Muted blue */
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.file-info {
+    font-size: 12px;
+    color: #6c757d; /* Grayish text */
+    margin-top: 10px;
+}
+
+.file-info p {
+    margin: 5px 0;
+}
+
+.error-message {
+    color: #f5b2b2; /* Light red */
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .image-uploader-container {
+        padding: 15px;
+    }
+
+    .image-uploader-content .icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .drag-message {
+        font-size: 14px;
+    }
+
+    .browse-message {
+        font-size: 12px;
+    }
+
+    .file-info p {
+        font-size: 10px;
+    }
+}
