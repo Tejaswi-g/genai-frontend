@@ -36,7 +36,7 @@ const Signup = () => {
 		}
 	
 		try {
-			const url = "http://localhost:8080/api/users/";
+			const url = "https://genai-backend-1.onrender.com/api/users/";
 			const { data: res } = await axios.post(url, data);
 			setMsg(res.message);
 		} catch (error) {

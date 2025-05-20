@@ -13,7 +13,7 @@ const MobileVerification = () => {
     // Send OTP request
     const sendOtp = async () => {
         try {
-            await axios.post("http://localhost:8080/api/send-otp", { phone });
+            await axios.post("https://genai-backend-1.onrender.com/api/send-otp", { phone });
             setOtpSent(true);
             setError("");
             alert("OTP sent successfully!");

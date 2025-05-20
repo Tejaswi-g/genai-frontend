@@ -140,7 +140,7 @@ function SmilePred() {
     setError(null);
 
     try {
-      const response = await fetch('http://localhost:8081/predict', {
+      const response = await fetch('https://genai-backend-95pk.onrender.com/predict', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ smiles }),
